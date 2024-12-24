@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Learning Path</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Personalized Learning Path</h1>
+
+        <div class="form-section">
+            <h2>Enter Student Information</h2>
+            <form id="student-form">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="strengths">Strengths (comma separated):</label>
+                <input type="text" id="strengths" required>
+
+                <label for="weaknesses">Weaknesses (comma separated):</label>
+                <input type="text" id="weaknesses" required>
+
+                <label for="interests">Interests (comma separated):</label>
+                <input type="text" id="interests" required>
+
+                <label for="learning-style">Learning Style:</label>
+                <select id="learning-style" required>
+                    <option value="visual">Visual</option>
+                    <option value="auditory">Auditory</option>
+                    <option value="kinesthetic">Kinesthetic</option>
+                </select>
+
+                <label for="preferred-topics">Preferred Topics (comma separated):</label>
+                <input type="text" id="preferred-topics" required>
+
+                <button type="submit">Generate Recommendations</button>
+                <button class="clear-btn" type="button" id="clear-btn">Clear</button>
+            </form>
+        </div>
+
+        <div class="recommendations">
+            <div class="cont name-cont">
+                <h2>Student name:</h2>
+                <p id="student-name"></p>
+            </div>
+
+            <div class="cont suggested-cont">
+                <h2>Suggested Workshops:</h2>
+                <ul id="workshops">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="cont task-cont">
+                <h2>Daily Task:</h2>
+                <p id="daily-task"></p>
+            </div>
+            <div class="cont mentor-cont">
+                <h2>Matched Mentor:</h2>
+                <p id="mentor"></p>
+            </div>
+            <div class="cont learning-style-cont">
+                <h2>Learning Style Suggestion:</h2>
+                <p id="learning-style-suggestion"></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

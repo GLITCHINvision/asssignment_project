@@ -1,0 +1,112 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.recommendations {
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+.recommendations p {
+    padding: 0;
+    margin: 0;
+    color: #272727;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 10px;
+    border: 2px solid rgb(175, 175, 175);
+    margin: 0 0 10px 0;
+}
+
+.recommendations ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recommendations li {
+    color: #272727;
+    margin: 0;
+}
+
+.recommendations h2 {
+    margin: 0;
+}
+
+.clear-btn {
+    padding: 10px;
+    background-color: #ff4400;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .15s;
+}
+.clear-btn:hover {
+    background-color: #d03700;
+}
